@@ -1,11 +1,10 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function PlaceOrder() {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
 
   // Get data from Redux / LocalStorage
   const { cartItems } = useSelector((state) => state.cart);
